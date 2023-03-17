@@ -1,0 +1,100 @@
+\documentclass{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[backend=biber, style=ieee]{biblatex} 
+\usepackage[portuguese]{babel} 
+\usepackage[printonlyused]{acronym}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{eurosym}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{listings}
+\usepackage{minted}
+\usepackage{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[compact]{titlesec}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage[shortlabels]{enumitem}
+\usepackage{fancyhdr}
+\usepackage{ragged2e}
+\usepackage{csquotes}
+
+\usepackage{titlesec}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}{}{0pt}{\Huge}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+\urlstyle{same}
+\hypersetup{
+    urlcolor=blue
+}
+
+\setlength{\headheight}{24.95015pt}
+\begin{document}
+\justifying
+
+\def\titulo{Guiao 2}
+\def\autores{João Fernandes 93460, David Raposo 93395}
+\def\letivo{2021/2022}
+\def\cadeira{Base de Dados}
+\def\departamento{Departamento de Eletrónica, Telecomunicações e Informática}
+\def\empresa{Universidade de Aveiro}
+
+
+\begin{titlepage}
+
+\begin{center}
+
+\vspace*{30mm}
+
+{\Huge \titulo}\\ 
+
+\vspace{7mm}
+
+{\LARGE \textbf{\cadeira}}\\
+
+\vspace{5mm}
+
+{\Large \empresa}\\
+
+\vspace{10mm}
+
+{\LARGE \autores}\\ 
+
+
+\vspace{10mm}
+
+{\LARGE \letivo}\\ 
+
+\vspace{20mm}
+
+{\large \departamento}\\ 
+
+\vspace{5mm}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=5cm]{Imagens/logo_UA.png}
+\label{fig:ua}
+\end{figure}
+
+\vspace{30mm}
+\end{center}
+
+\end{titlepage}
+
+\pagenumbering{arabic}
+
+\tableofcontents
+
+\chapter{}
+
+\end{document}
